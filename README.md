@@ -11,7 +11,7 @@ after pulling code install dependancies first
 ``` npm install ```
 
 
-run application
+run application on url http://localhost:5173/
 
 ``` npm run dev ```
 
