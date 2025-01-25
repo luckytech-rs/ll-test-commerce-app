@@ -28,6 +28,8 @@ const productStore = useProductStore();
 </template>
 
 <style lang="scss" scoped>
+@use "sass:color";
+
 header {
   display: flex;
   flex-direction: row;
@@ -61,7 +63,7 @@ button {
     &.active {
       font-weight: bold;
       color: #ffffff;
-      background-color: adjust-hue(#535bf2, 10)
+      background-color: color.adjust(#535bf2, $lightness: -20%);
     }
   }
 }

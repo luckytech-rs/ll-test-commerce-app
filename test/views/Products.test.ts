@@ -1,5 +1,5 @@
 import { render, waitFor } from '@testing-library/vue';
-import App from '../../src/views/App.vue';
+import App from '../../src/views/Products.vue';
 import { vi } from 'vitest';
 import * as api from '../../src/services/Api';
 import { createTestingPinia } from '@pinia/testing';
@@ -9,7 +9,7 @@ vi.spyOn(api, 'fetchProducts').mockResolvedValue([
     { id: 2, title: 'Product 2', category: 'Category 2', price: 20, image: '', description: '' },
 ]);
 
-describe('App.vue', () => {
+describe('Products.vue', () => {
     it('renders Header and ProductList components', async () => {
         // Render the App component with Pinia
         const { getByText } = render(App, {

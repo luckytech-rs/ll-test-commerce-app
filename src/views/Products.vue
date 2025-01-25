@@ -8,7 +8,7 @@ productStore.loadProducts();
 </script>
 
 <template>
-  <div id="app">
+  <div id="products">
     <Header />
     <ProductList />
   </div>
